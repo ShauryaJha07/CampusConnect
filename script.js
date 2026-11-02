@@ -9,7 +9,7 @@ const starterEvents = [
   {id:"sustainability",title:"Sustainability Workshop",category:"Workshop",date:"2026-11-25",time:"1:00 PM – 3:00 PM",location:"Room 101",description:"Explore small, practical ways to make campus life more sustainable. Bring your curiosity and leave with an idea you can put into action.",capacity:40,organizer:"Green Campus",image:"https://images.unsplash.com/photo-1497435334941-8c899ee9e8e9?auto=format&fit=crop&w=1000&q=85"}
 ];
 const DB={events:"cc_events",last:"cc_last"};
-const API_BASE_URL="https://campusconnect-api.onrender.com";
+const API_BASE_URL="https://campusconnect-api-7sym.onrender.com";
 const read=(key,fallback)=>{try{return JSON.parse(localStorage.getItem(key))??fallback}catch{return fallback}};
 const write=(key,value)=>{try{localStorage.setItem(key,JSON.stringify(value));return true}catch{return false}};
 if(!localStorage.getItem(DB.events))write(DB.events,starterEvents);
